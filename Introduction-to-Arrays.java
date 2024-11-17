@@ -3,10 +3,10 @@
 // In Java, an array must be explicitly initialized to allocate memory for it.
 
 // How do we declare and initialize an array? Here's an example:
-int[] number = new int[5];
+    int[] number = new int[5];
 
 // now let's break it down
-// 1. int[] number:
+// 1. int[]:
 // This declares a variable number that will store an array of integers.
 // Normally, when we declare and initialize a single int variable, it looks like this:
     int number = 5; // A single integer value.
@@ -16,15 +16,17 @@ int[] number = new int[5];
 // 2. new int[5]:
 // The keyword "new" is used to allocate memory for the array.
 // "[5]" specifies the size of the array, meaning it can store 5 integers.
-// Without this, Java doesn’t know how much memory to allocate. So it's an important thing to remember
+// NOTE: The size of an array is determined by the value you provide when initializing it.
+//       You can specify the array size based on your needs.
+// Without this, Java doesn’t know how much memory to allocate. So, it's important to remember.
 
 // Now let’s talk about two methods to initialize this array.
 
 // Method 1: Declare and Initialize Separately
 // -You declare the array first, then allocate memory for it in a separate step.
-//  Just like on our example.
+//  Just like in our example.
         int[] number = new int[5]
-//  Now let's add value in our array.
+//  Now let's add value to our array.
 //  You can assign values to specific indices after initialization
 //  Indices are the positions in the array, starting from 0.
 //  Example of adding values:
@@ -53,25 +55,24 @@ int[] number = new int[5];
         number[2] = 35; // Update the value at index 2
         System.out.println(number[2]); // Output: 35
 
-// Now let's output all the elements in an array using a for() loop
+// Now let's print all the elements in the array using a for() loop
 public class Introduction_to_Arrays {
     public static void main(String[] args) {
         // Declare and initialize the array with values
         int[] number = {10, 20, 30, 40, 50};
 
-        // Using a for loop to output all elements in the array
+        // Using a for loop to print all elements in the array
         for (int i = 0; i < number.length; i++) {
             // The loop starts with i = 0, which refers to the first element in the array
             // i < number.length ensures the loop will run as long as i is less than the length of the array (5 in this case)
             // number[i] accesses and prints each element at index i in the array
             System.out.println(number[i]);
+            // The for loop prints each element of the array one by one:
+            // Output: 10
+            //         20
+            //         30
+            //         40
+            //         50
         }
     }
 }
-// The for loop prints each element of the array one by one:
-/* Output: 10
-           20
-           30
-           40
-           50
-*/
