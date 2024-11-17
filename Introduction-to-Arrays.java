@@ -8,7 +8,7 @@ int[] number = new int[5];
 // now let's break it down
 // 1. int[] number:
 // This declares a variable number that will store an array of integers.
-// Normally, when you declare and initialize a single int variable, it looks like this:
+// Normally, when we declare and initialize a single int variable, it looks like this:
     int number = 5; // A single integer value.
 // However, an array is not a single value it’s a collection of values.
 // So we declare it differently, using int[], to indicate that this variable will hold multiple integers
@@ -16,7 +16,7 @@ int[] number = new int[5];
 // 2. new int[5]:
 // The keyword "new" is used to allocate memory for the array.
 // "[5]" specifies the size of the array, meaning it can store 5 integers.
-// Without this, Java doesn’t know how much memory to allocate. so it's important thing to remember
+// Without this, Java doesn’t know how much memory to allocate. So it's an important thing to remember
 
 // Now let’s talk about two methods to initialize this array.
 
