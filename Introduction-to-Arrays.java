@@ -25,7 +25,7 @@
 // Method 1: Declare and Initialize Separately
 // -You declare the array first, then allocate memory for it in a separate step.
 //  Just like in our example.
-        int[] number = new int[5]
+        int[] number = new int[5];
 //  Now let's add value to our array.
 //  You can assign values to specific indices after initialization
 //  Indices are the positions in the array, starting from 0.
